@@ -9,7 +9,7 @@
 @
 @	Returned Register Contents:
 @	R0: Address of the string passed in
-@	All Register contents are preserved R0 - R3
+@	All Register contents are preserved except R0 - R3
 .data
 pStrA:			.word 0
 pNewStr:		.word 0
