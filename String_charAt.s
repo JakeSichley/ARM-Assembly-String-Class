@@ -7,7 +7,7 @@
 @
 @	Returned Register Contents:
 @	R0: Character at the specified index
-@	All Register contents are preserved R0 - R3
+@	All Register contents are preserved except R0 - R3
 .data
 iStrLenA:		.word 0
 iStart:			.word 0
