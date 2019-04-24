@@ -6,7 +6,7 @@
 @
 @	Returned Register Contents:
 @	R0: Address of the dynamically allocated string
-@	All Register contents are preserved except R0 - R3
+@	All Register contents are preserved except R0 - R1
 .data
 pStrA:			.word 0
 pNewStr:		.word 0
@@ -27,7 +27,7 @@ String_toUpperCase:
 	str r0, [r1]		@ Store the value of r0 into r1
 @ 	Compare Loop
 cmp_loop:
-	ldrb r1, [r0], #1	@ Load a byte from the string into r3
+	ldrb r1, [r0], #1	@ Load a byte from the string into r1
 	cmp r1, #97			@ 'a' = 97
 	bmi	no_match		@ If negative, character is below 'a'
 	cmp r1, #123		@ 'z' = 122 (1 above for PL)
