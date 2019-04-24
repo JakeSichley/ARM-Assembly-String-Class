@@ -7,7 +7,7 @@
 @
 @	Returned Register Contents:
 @	R0: Bool (0 or 1)
-@	All Register contents are preserved R0 - R3
+@	All Register contents are preserved except R0 - R2
 .data
 iStrLenA:		.word 0
 iStrLenB:		.word 0
