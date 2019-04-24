@@ -6,7 +6,7 @@
 @
 @	Returned Register Contents:
 @	R0: Pointer to the newly allocated string
-@	All Register contents are preserved except for R0
+@	All Register contents are preserved except for R0 - R3
 .data
 iStrLenA:		.word 0
 pStrA:			.word 0
