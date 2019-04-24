@@ -7,7 +7,7 @@
 @
 @	Returned Register Contents:
 @	R0: Address of the concatenated string
-@	All Register contents are preserved except for R0 and R1
+@	All Register contents are preserved except for R0 - R3
 .data
 iStrLenA:		.word 0
 iStrLenB:		.word 0
@@ -62,7 +62,7 @@ copy_loop_2:
 	ldr r1, [r1]		@ Load the value of r1 into r1
 cmp_loop_2:
 	ldrb r2, [r1], #1	@ Load a byte from r1 into r2
-	strb r2, [r0], #1	@ Else, store a byte from r2 into r0
+	strb r2, [r0], #1	@ Store a byte from r2 into r0
 	cmp r2, #0			@ Check for null character
 	bne	cmp_loop_2		@ If not equal, keep storing bytes
 @	Return				@ Else, return
